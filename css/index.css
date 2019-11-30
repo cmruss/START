@@ -60,9 +60,10 @@ body {
 
 div.content {
     background-color: rgba(255, 255, 255, 0.8);
-    max-width: 70vw;
+    width: 80%;
     padding: 5% 0;
     margin: 5% auto;
+    border-radius: 0.25rem;
 }
 
 h1 {
@@ -70,14 +71,31 @@ h1 {
     font-size: 2rem;
 }
 
+.img-container{
+    width: 60%;
+    position: relative;
+    text-align: center;
+    margin: 8% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
 img {
-    margin: 5% auto;
-    width: 50%;
-    border-radius: 1%;
+    width: 100%;
 }
 
 p {
-    margin-bottom: 10%;
+    font-size: 0.8rem;
+    color: whitesmoke;
+    background: black;
+    padding: 0.5% 1%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.8;
+    border-top-left-radius: 3px;
 }
 
 .content div {
@@ -90,4 +108,11 @@ p {
 }
 
 @media(max-width: 500px) {
+    div.content{
+        width: 95%;
+    }
+
+    .img-container{
+        width: 90%;
+    }
 }
